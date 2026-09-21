@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toufik's Organic Collection | Organic Toothpaste</title>
+  <meta name="description" content="Organic toothpaste made with natural ingredients. Order Toufik's Organic Collection toothpaste online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top">Toufik's Organic Collection</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav class="nav" id="nav">
+    <a href="#ingredients">Ingredients</a>
+    <a href="#why">Why organic</a>
+    <a href="#video">Video</a>
+    <a href="#reviews">Reviews</a>
+    <a class="btn btn-small" href="#order">Order now</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Toothpaste made from plants you can name.</h1>
+      <p class="lead">Toufik's Organic Toothpaste cleans your teeth with natural ingredients. No harsh chemicals, no artificial colours.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#order">Order now</a>
+        <a class="btn btn-ghost" href="#ingredients">See what's inside</a>
+      </div>
+      <p class="price-line"><strong id="hero-price">$0.00</strong> per tube &middot; Cash on delivery available</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <!-- Replace this SVG with your product photo: <img src="images/toothpaste.jpg" alt="Toufik's Organic Toothpaste"> -->
+      <svg viewBox="0 0 320 420" role="img" aria-label="Toothpaste tube">
+        <rect x="70" y="40" width="180" height="300" rx="26" fill="#1F3D2B"/>
+        <path d="M70 300 L250 300 L240 350 L80 350 Z" fill="#163020"/>
+        <rect x="120" y="10" width="80" height="44" rx="10" fill="#E0A526"/>
+        <circle cx="160" cy="150" r="46" fill="#CFE8DA"/>
+        <path d="M160 118 C185 130 190 165 160 184 C130 165 135 130 160 118Z" fill="#2F7A4B"/>
+        <text x="160" y="240" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="20" fill="#F7FAF8">Toufik's</text>
+        <text x="160" y="266" text-anchor="middle" font-family="Figtree, sans-serif" font-size="14" fill="#CFE8DA">Organic Toothpaste</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- INGREDIENTS -->
+  <section class="section" id="ingredients">
+    <h2>What's inside the tube</h2>
+    <p class="section-intro">Edit this list to match your real formula.</p>
+    <ul class="ingredients">
+      <li>
+        <h3>Neem</h3>
+        <p>A traditional herb used in oral care for generations.</p>
+      </li>
+      <li>
+        <h3>Clove oil</h3>
+        <p>Gives a warm, natural flavour and a fresh feeling.</p>
+      </li>
+      <li>
+        <h3>Miswak extract</h3>
+        <p>Made from the Salvadora persica tree, used for teeth cleaning.</p>
+      </li>
+      <li>
+        <h3>Baking soda</h3>
+        <p>A gentle cleaner that helps lift surface stains.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- WHY ORGANIC -->
+  <section class="section section-tint" id="why">
+    <h2>Why choose organic toothpaste</h2>
+    <div class="why-grid">
+      <div>
+        <h3>Simple formula</h3>
+        <p>A short ingredient list you can read and understand.</p>
+      </div>
+      <div>
+        <h3>No artificial colours</h3>
+        <p>The colour of the paste comes from the plants in it.</p>
+      </div>
+      <div>
+        <h3>Not tested on animals</h3>
+        <p>Made with care for people and animals.</p>
+      </div>
+      <div>
+        <h3>Everyday use</h3>
+        <p>Brush twice a day, morning and night, like any toothpaste.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section" id="video">
+    <h2>Watch how it's made</h2>
+    <div class="video-wrap">
+      <!-- Replace YOUTUBE_VIDEO_ID with the ID from your link (the part after v=) -->
+      <iframe id="yt" data-src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" title="Toufik's Organic Toothpaste video" loading="lazy" allowfullscreen></iframe>
+      <p class="video-placeholder" id="video-placeholder">Your YouTube video will appear here. Send me the link and I'll add it.</p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section-tint" id="reviews">
+    <h2>What customers say</h2>
+    <p class="section-intro">Replace these with real reviews from your customers.</p>
+    <div class="reviews">
+      <blockquote>
+        <p>Customer review goes here.</p>
+        <footer>Customer name, city</footer>
+      </blockquote>
+      <blockquote>
+        <p>Customer review goes here.</p>
+        <footer>Customer name, city</footer>
+      </blockquote>
+      <blockquote>
+        <p>Customer review goes here.</p>
+        <footer>Customer name, city</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section class="section" id="order">
+    <h2>Order your toothpaste</h2>
+    <p class="section-intro">Fill in the form and we'll confirm your order on WhatsApp.</p>
+    <form class="order-form" id="order-form" novalidate>
+      <label>Full name
+        <input type="text" name="name" required autocomplete="name">
+      </label>
+      <label>Phone number
+        <input type="tel" name="phone" required autocomplete="tel">
+      </label>
+      <label>Delivery address
+        <textarea name="address" rows="3" required autocomplete="street-address"></textarea>
+      </label>
+      <label>Quantity
+        <select name="qty" id="qty">
+          <option value="1">1 tube</option>
+          <option value="2">2 tubes</option>
+          <option value="3">3 tubes</option>
+          <option value="5">5 tubes</option>
+        </select>
+      </label>
+      <p class="total">Total: <strong id="total">$0.00</strong></p>
+      <p class="form-error" id="form-error" role="alert"></p>
+      <button class="btn" type="submit">Send order on WhatsApp</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p><strong>Toufik's Organic Collection</strong></p>
+  <p>Phone / WhatsApp: <a id="footer-phone" href="#">+000 000 000 000</a></p>
+  <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+  <p class="small">&copy; <span id="year"></span> Toufik's Organic Collection. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
